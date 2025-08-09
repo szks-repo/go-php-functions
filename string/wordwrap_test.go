@@ -1,4 +1,4 @@
-package string
+package phpstring
 
 import (
 	"strings"
