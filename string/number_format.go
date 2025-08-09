@@ -1,4 +1,4 @@
-package string
+package phpstring
 
 import (
 	"golang.org/x/exp/constraints"
