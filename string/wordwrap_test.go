@@ -19,15 +19,15 @@ func TestWordwrap(t *testing.T) {
 		},
 		{
 			input: "aaaaa",
-			want: "aaaaa",
+			want:  "aaaaa",
 		},
 		{
 			input: "abcdefghijklmnopqrstuvwxyz",
 			opt: []WordwrapOpt{
 				{
-					Width: 7,
-					Delim: "",
-					CutLongWords: false,	
+					Width:        7,
+					Delim:        "",
+					CutLongWords: false,
 				},
 			},
 			want: strings.Join([]string{
@@ -41,9 +41,9 @@ func TestWordwrap(t *testing.T) {
 			input: "abcdefghijklmnopqrstuvwxyz",
 			opt: []WordwrapOpt{
 				{
-					Width: 7,
-					Delim: "",
-					CutLongWords: true,	
+					Width:        7,
+					Delim:        "",
+					CutLongWords: true,
 				},
 			},
 			want: strings.Join([]string{
